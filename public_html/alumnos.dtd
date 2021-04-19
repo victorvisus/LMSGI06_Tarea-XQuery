@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+
+
+<!ELEMENT alumnos (alumno)*>
+
+<!ELEMENT alumno (apenom|direc|pobla|telef|notas)*>
+<!ATTLIST alumno
+    cod CDATA #IMPLIED
+  >
+    <!ELEMENT apenom (#PCDATA)>
+    <!ELEMENT direc (#PCDATA)>
+    <!ELEMENT pobla (#PCDATA)>
+    <!ELEMENT telef (#PCDATA)>
+
+<!ELEMENT notas (asignaturas)*>
+    <!ELEMENT asignaturas EMPTY>
+    <!ATTLIST asignaturas
+        cod CDATA #IMPLIED
+        nombre CDATA #IMPLIED
+        nota CDATA #IMPLIED
+    >

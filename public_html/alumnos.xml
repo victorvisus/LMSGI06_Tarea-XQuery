@@ -1,0 +1,31 @@
+<?xml version="1.1" encoding="ISO-8859-1" standalone="no"?>
+
+<!DOCTYPE notas SYSTEM "alumnos.dtd">
+<alumnos>
+
+    <alumno cod="n12344345">
+        <apenom>
+            Alcalde García, Luis
+        </apenom>
+        <direc>
+            Las Manos, 24
+        </direc>
+        <pobla>
+            Lamadrid
+        </pobla>
+        <telef>
+            942756645
+        </telef>
+        <notas>
+            <asignaturas cod="a1" nombre="FH" nota="4"/>
+            <asignaturas cod="a2" nombre="FOL" nota="10"/>
+            <asignaturas cod="a3" nombre="ISO" nota="3"/>
+            <asignaturas cod="a4" nombre="LMSGI" nota="8"/>
+            <asignaturas cod="a5" nombre="PAR" nota="6"/>
+            <asignaturas cod="a6" nombre="GBD" nota="9"/>
+        </notas>
+    </alumno>
+</alumnos>
+
+
+
