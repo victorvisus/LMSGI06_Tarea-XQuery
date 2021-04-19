@@ -1,7 +1,7 @@
 <?xml version="1.1" encoding="ISO-8859-1" standalone="no"?>
 
 <!DOCTYPE notas SYSTEM "alumnos.dtd">
-<alumnos>
+<clase>
 
     <alumno cod="n12344345">
         <apenom>
@@ -17,15 +17,64 @@
             942756645
         </telef>
         <notas>
-            <asignaturas cod="a1" nombre="FH" nota="4"/>
-            <asignaturas cod="a2" nombre="FOL" nota="10"/>
-            <asignaturas cod="a3" nombre="ISO" nota="3"/>
-            <asignaturas cod="a4" nombre="LMSGI" nota="8"/>
-            <asignaturas cod="a5" nombre="PAR" nota="6"/>
-            <asignaturas cod="a6" nombre="GBD" nota="9"/>
+            <asignatura cod="a1" nombre="FH" nota="4"/>
+            <asignatura cod="a2" nombre="FOL" nota="10"/>
+            <asignatura cod="a3" nombre="ISO" nota="3"/>
+            <asignatura cod="a4" nombre="LMSGI" nota="8"/>
+            <asignatura cod="a5" nombre="PAR" nota="6"/>
+            <asignatura cod="a6" nombre="GBD" nota="9"/>
         </notas>
     </alumno>
-</alumnos>
+
+    <alumno cod="n43483437">
+        <apenom>
+            González Pérez, Olga
+        </apenom>
+        <direc>
+            Miraflor 28 - 3A
+        </direc>
+        <pobla>
+            Torres
+        </pobla>
+        <telef>
+            942564355
+        </telef>
+        <notas>
+            <asignatura cod="a1" nombre="FH" nota="5"/>
+            <asignatura cod="a2" nombre="FOL" nota="7"/>
+            <asignatura cod="a4" nombre="LMSGI" nota="4"/>
+        </notas>
+    </alumno>
+
+    <alumno cod="n88234942">
+        <apenom>
+            Fernández Díaz, María
+        </apenom>
+        <direc>
+            Luisa Fernanda 53
+        </direc>
+        <pobla>
+            Miera
+        </pobla>
+        <telef>
+            942346945
+        </telef>
+        <notas>
+            <asignatura cod="a1" nombre="FH" nota="8"/>
+            <asignatura cod="a2" nombre="FOL" nota="6"/>
+            <asignatura cod="a3" nombre="ISO" nota="3"/>
+        </notas>
+    </alumno>
+
+    <asignaturas>
+        <asignatura cod="a1" nombre="FH"/>
+        <asignatura cod="a2" nombre="FOL"/>
+        <asignatura cod="a3" nombre="ISO"/>
+        <asignatura cod="a4" nombre="LMSGI"/>
+        <asignatura cod="a5" nombre="PAR"/>
+        <asignatura cod="a6" nombre="GBD"/>
+    </asignaturas>
+</clase>
 
 
 

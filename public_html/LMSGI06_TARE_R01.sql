@@ -1,4 +1,4 @@
-﻿CREATE TABLE alumnos
+CREATE TABLE alumnos
 (
   cod    VARCHAR(10) PRIMARY KEY NOT NULL,
   apenom VARCHAR(30),
