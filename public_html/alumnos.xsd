@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+
+<xs:schema
+    elementFormDefault="qualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+
+    <!-- ****************************************** TIPOS PERSONALIZADOS **** -->
+    <xs:annotation>
+        <xs:documentation>
+            Definir tipo de Foreign Key.
+        </xs:documentation>
+    </xs:annotation>
+    <xs:simpleType name="asigFk">
+        <xs:restriction base="xs:IDREF">
+            <xs:pattern value="[a][0-9]" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:annotation>
+        <xs:documentation>
+            Definir tipo de Primary Key para cod alumno y para cod asignatura
+        </xs:documentation>
+    </xs:annotation>
+    <xs:simpleType name="asignaturaPk">
+        <xs:restriction base="xs:ID">
+            <xs:pattern value="[a][0-9]" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="alumnoPk">
+        <xs:restriction base="xs:ID">
+            <xs:pattern value="[n][0-9]{8}" />
+        </xs:restriction>
+    </xs:simpleType>
+    <!-- ************************************* /FIN TIPOS PERSONALIZADOS **** -->
+
+    <!-- ************************************************* TIPOS SIMPLES **** -->
+    <!-- ELEMENTO ALUMNO -->
+    <xs:element name="asig">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="asigFk" name="cod" use="required"/>
+                    <xs:attribute type="xs:string" name="nombre" use="required"/>
+                    <xs:attribute type="xs:byte" name="nota" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="apenom" type="xs:string"/>
+    <xs:element name="direc" type="xs:string"/>
+    <xs:element name="pobla" type="xs:string"/>
+    <xs:element name="telef" type="xs:string"/>
+
+    <!-- ELEMENTO ASIGNATURAS -->
+    <xs:element name="asignatura">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="asignaturaPk" name="cod" use="required"/>
+                    <xs:attribute type="xs:string" name="nombre" use="optional"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <!-- ******************************************** /FIN TIPOS SIMPLES **** -->
+
+    <!-- *********************************************** TIPOS COMPLEJOS **** -->
+    <!-- ELEMENTO ALUMNO -->
+    <xs:element name="notas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="asig" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="alumno">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="apenom"/>
+                <xs:element ref="direc"/>
+                <xs:element ref="pobla"/>
+                <xs:element ref="telef"/>
+                <xs:element ref="notas"/>
+            </xs:sequence>
+            <xs:attribute type="alumnoPk" name="cod" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- ELEMENTO ASIGNATURAS -->
+    <xs:element name="asignaturas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="asignatura" maxOccurs="unbounded" minOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- ELEMENTO PADRE ALUMNOS -->
+    <xs:element name="alumnos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="alumno" maxOccurs="unbounded" minOccurs="0"/>
+                <xs:element ref="asignaturas"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!-- ****************************************** /FIN TIPOS COMPLEJOS **** -->
+
+
+
+
+
+
+</xs:schema>

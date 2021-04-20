@@ -1,7 +1,9 @@
 <?xml version="1.1" encoding="ISO-8859-1" standalone="no"?>
 
-<!DOCTYPE notas SYSTEM "alumnos.dtd">
-<clase>
+<!-- <!DOCTYPE alumnos SYSTEM "alumnos.dtd"> -->
+
+<alumnos xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+         xs:noNamespaceSchemaLocation="alumnos.xsd">
 
     <alumno cod="n12344345">
         <apenom>
@@ -17,12 +19,12 @@
             942756645
         </telef>
         <notas>
-            <asignatura cod="a1" nombre="FH" nota="4"/>
-            <asignatura cod="a2" nombre="FOL" nota="10"/>
-            <asignatura cod="a3" nombre="ISO" nota="3"/>
-            <asignatura cod="a4" nombre="LMSGI" nota="8"/>
-            <asignatura cod="a5" nombre="PAR" nota="6"/>
-            <asignatura cod="a6" nombre="GBD" nota="9"/>
+            <asig cod="a1" nombre="FH" nota="4"/>
+            <asig cod="a2" nombre="FOL" nota="10"/>
+            <asig cod="a3" nombre="ISO" nota="3"/>
+            <asig cod="a4" nombre="LMSGI" nota="8"/>
+            <asig cod="a5" nombre="PAR" nota="6"/>
+            <asig cod="a6" nombre="GBD" nota="9"/>
         </notas>
     </alumno>
 
@@ -40,9 +42,9 @@
             942564355
         </telef>
         <notas>
-            <asignatura cod="a1" nombre="FH" nota="5"/>
-            <asignatura cod="a2" nombre="FOL" nota="7"/>
-            <asignatura cod="a4" nombre="LMSGI" nota="4"/>
+            <asig cod="a1" nombre="FH" nota="5"/>
+            <asig cod="a2" nombre="FOL" nota="7"/>
+            <asig cod="a4" nombre="LMSGI" nota="4"/>
         </notas>
     </alumno>
 
@@ -60,9 +62,9 @@
             942346945
         </telef>
         <notas>
-            <asignatura cod="a1" nombre="FH" nota="8"/>
-            <asignatura cod="a2" nombre="FOL" nota="6"/>
-            <asignatura cod="a3" nombre="ISO" nota="3"/>
+            <asig cod="a1" nombre="FH" nota="8"/>
+            <asig cod="a2" nombre="FOL" nota="6"/>
+            <asig cod="a3" nombre="ISO" nota="3"/>
         </notas>
     </alumno>
 
@@ -74,7 +76,4 @@
         <asignatura cod="a5" nombre="PAR"/>
         <asignatura cod="a6" nombre="GBD"/>
     </asignaturas>
-</clase>
-
-
-
+</alumnos>
