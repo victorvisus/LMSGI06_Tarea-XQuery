@@ -25,3 +25,11 @@
             cod ID #REQUIRED
             nombre CDATA #IMPLIED
         >
+
+<!ELEMENT notas (nota)*>
+    <!ELEMENT nota EMPTY>
+    <!ATTLIST nota
+            alum IDREF #REQUIRED
+            asig IDREF #REQUIRED
+            calificacion CDATA #REQUIRED
+    >

@@ -8,12 +8,18 @@
     <!-- ****************************************** TIPOS PERSONALIZADOS **** -->
     <xs:annotation>
         <xs:documentation>
-            Definir tipo de Foreign Key.
+            Definir tipo de Foreign Key. para
         </xs:documentation>
     </xs:annotation>
     <xs:simpleType name="asigFk">
         <xs:restriction base="xs:IDREF">
             <xs:pattern value="[a][0-9]" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="alumFk">
+        <xs:restriction base="xs:IDREF">
+            <xs:pattern value="[n][0-9]{8}" />
         </xs:restriction>
     </xs:simpleType>
 
@@ -37,17 +43,6 @@
 
     <!-- ************************************************* TIPOS SIMPLES **** -->
     <!-- ELEMENTO ALUMNO -->
-    <xs:element name="asig">
-        <xs:complexType>
-            <xs:simpleContent>
-                <xs:extension base="xs:string">
-                    <xs:attribute type="asigFk" name="cod" use="required"/>
-                    <xs:attribute type="xs:string" name="nombre" use="required"/>
-                    <xs:attribute type="xs:byte" name="nota" use="required"/>
-                </xs:extension>
-            </xs:simpleContent>
-        </xs:complexType>
-    </xs:element>
     <xs:element name="apenom" type="xs:string"/>
     <xs:element name="direc" type="xs:string"/>
     <xs:element name="pobla" type="xs:string"/>
@@ -64,17 +59,23 @@
             </xs:simpleContent>
         </xs:complexType>
     </xs:element>
+
+    <!-- ELEMENTO NOTAS -->
+    <xs:element name="nota">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="alumFk" name="alum" use="required"/>
+                    <xs:attribute type="asigFk" name="asig" use="required"/>
+                    <xs:attribute type="xs:float" name="calificacion" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
     <!-- ******************************************** /FIN TIPOS SIMPLES **** -->
 
     <!-- *********************************************** TIPOS COMPLEJOS **** -->
     <!-- ELEMENTO ALUMNO -->
-    <xs:element name="notas">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element ref="asig" maxOccurs="unbounded" minOccurs="0"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
     <xs:element name="alumno">
         <xs:complexType>
             <xs:sequence>
@@ -82,7 +83,6 @@
                 <xs:element ref="direc"/>
                 <xs:element ref="pobla"/>
                 <xs:element ref="telef"/>
-                <xs:element ref="notas"/>
             </xs:sequence>
             <xs:attribute type="alumnoPk" name="cod" use="required"/>
         </xs:complexType>
@@ -97,12 +97,21 @@
         </xs:complexType>
     </xs:element>
 
+    <!-- ELEMENTO NOTAS -->
+    <xs:element name="notas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nota" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
     <!-- ELEMENTO PADRE ALUMNOS -->
-    <xs:element name="alumnos">
+    <xs:element name="clase">
         <xs:complexType>
             <xs:sequence>
                 <xs:element ref="alumno" maxOccurs="unbounded" minOccurs="0"/>
                 <xs:element ref="asignaturas"/>
+                <xs:element ref="notas"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>

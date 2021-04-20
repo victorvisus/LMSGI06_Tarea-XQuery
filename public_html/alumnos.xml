@@ -1,8 +1,11 @@
+<?xml version="1.1" encoding="ISO-8859-1"?>
+
+<!--
 <?xml version="1.1" encoding="ISO-8859-1" standalone="no"?>
 
-<!-- <!DOCTYPE alumnos SYSTEM "alumnos.dtd"> -->
+<!DOCTYPE alumnos SYSTEM "alumnos.dtd"> -->
 
-<alumnos xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+<clase xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
          xs:noNamespaceSchemaLocation="alumnos.xsd">
 
     <alumno cod="n12344345">
@@ -18,14 +21,7 @@
         <telef>
             942756645
         </telef>
-        <notas>
-            <asig cod="a1" nombre="FH" nota="4"/>
-            <asig cod="a2" nombre="FOL" nota="10"/>
-            <asig cod="a3" nombre="ISO" nota="3"/>
-            <asig cod="a4" nombre="LMSGI" nota="8"/>
-            <asig cod="a5" nombre="PAR" nota="6"/>
-            <asig cod="a6" nombre="GBD" nota="9"/>
-        </notas>
+
     </alumno>
 
     <alumno cod="n43483437">
@@ -41,11 +37,7 @@
         <telef>
             942564355
         </telef>
-        <notas>
-            <asig cod="a1" nombre="FH" nota="5"/>
-            <asig cod="a2" nombre="FOL" nota="7"/>
-            <asig cod="a4" nombre="LMSGI" nota="4"/>
-        </notas>
+
     </alumno>
 
     <alumno cod="n88234942">
@@ -61,11 +53,7 @@
         <telef>
             942346945
         </telef>
-        <notas>
-            <asig cod="a1" nombre="FH" nota="8"/>
-            <asig cod="a2" nombre="FOL" nota="6"/>
-            <asig cod="a3" nombre="ISO" nota="3"/>
-        </notas>
+
     </alumno>
 
     <asignaturas>
@@ -76,4 +64,19 @@
         <asignatura cod="a5" nombre="PAR"/>
         <asignatura cod="a6" nombre="GBD"/>
     </asignaturas>
-</alumnos>
+
+    <notas>
+        <nota alum="n12344345" asig="a1" calificacion="4"/>
+        <nota alum="n43483437" asig="a1" calificacion="5"/>
+        <nota alum="n88234942" asig="a1" calificacion="8"/>
+        <nota alum="n12344345" asig="a2" calificacion="10"/>
+        <nota alum="n43483437" asig="a2" calificacion="7"/>
+        <nota alum="n88234942" asig="a2" calificacion="6"/>
+        <nota alum="n12344345" asig="a3" calificacion="3"/>
+        <nota alum="n88234942" asig="a3" calificacion="6"/>
+        <nota alum="n12344345" asig="a4" calificacion="8"/>
+        <nota alum="n43483437" asig="a4" calificacion="4"/>
+        <nota alum="n12344345" asig="a5" calificacion="6"/>
+        <nota alum="n12344345" asig="a6" calificacion="9"/>
+    </notas>
+</clase>
