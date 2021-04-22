@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fp>
+  <ciclos_informatica>
+    <ciclo id="ASIR">
+      <nombre>Administracion de Sistemas Informaticos en Red</nombre>
+	  <legislacion>
+		<real_decreto>Real Decreto 1629/2009, de 30 de octubre</real_decreto>
+		<orden>ORDEN de 19 de julio de 2010</orden>
+	  </legislacion>
+      <grado>Superior</grado>
+	  <anyo>2009</anyo>
+      <titulacion>Técnico Superior en Administración de Sistemas Informáticos en Red</titulacion>
+	  <modulos>
+	  	<modulo>
+			<nombre>Implantación de sistemas operativos</nombre>
+			<horas>224</horas>
+		</modulo>
+	  	<modulo>
+			<nombre>Planificación y administración de redes</nombre>
+			<horas>192</horas>
+		</modulo>
+	  	<modulo>
+			<nombre>Fundamentos de hardware</nombre>
+			<horas>96</horas>
+		</modulo>
+	  	<modulo>
+			<nombre>Gestión de bases de datos</nombre>
+			<horas>160</horas>
+		</modulo>
+	  	<modulo>
+			<nombre>Lenguajes de marcas y sistemas de gestión de información</nombre>
+			<horas>96</horas>
+		</modulo>
+	  	<modulo>
+			<nombre>Formación y orientación laboral</nombre>
+			<horas>96</horas>
+		</modulo>										
+	  </modulos>
+    </ciclo>
+    <ciclo id="DAM">
+      <nombre>Desarrollo de Aplicaciones Multiplataforma</nombre>
+	  <legislacion>
+		<real_decreto>Real Decreto 450/2010, de 16 de abril</real_decreto>
+		<orden>ORDEN de 16 de junio de 2011</orden>
+	  </legislacion>
+      <grado>Superior</grado>
+	  <anyo>2010</anyo>
+      <titulacion>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</titulacion>
+	  <modulos>
+	  	<modulo>
+			<nombre>Sistemas informáticos</nombre>
+			<horas>160</horas>
+		</modulo>
+		<modulo>
+			<nombre>Bases de datos</nombre>
+			<horas>160</horas>
+		</modulo>
+		<modulo>
+			<nombre>Programación</nombre>
+			<horas>256</horas>
+		</modulo>
+		<modulo>
+			<nombre>Lenguajes de marcas y sistemas de gestión de información</nombre>
+			<horas>96</horas>
+		</modulo>
+		<modulo>
+			<nombre>Entornos de desarrollo</nombre>
+			<horas>96</horas>
+		</modulo>
+		<modulo>
+			<nombre>Formación y orientación Laboral</nombre>
+			<horas></horas>
+		</modulo>
+	  </modulos>
+    </ciclo>
+    <ciclo id="DAW">
+      <nombre>Desarrollo de Aplicaciones Web</nombre>
+	  <legislacion>
+		<real_decreto>Real Decreto 686/2010, de 20 de mayo</real_decreto>
+		<orden>ORDEN de 16 de junio de 2011</orden>
+	  </legislacion>
+      <grado>Superior</grado>
+	  <anyo>2010</anyo>
+      <titulacion>Técnico Superior en Desarrollo de Aplicaciones Web</titulacion>
+	  <modulos>
+	  	<modulo>
+			<nombre>Sistemas informáticos</nombre>
+			<horas>160</horas>
+		</modulo>
+		<modulo>
+			<nombre>Bases de datos</nombre>
+			<horas>160</horas>
+		</modulo>
+		<modulo>
+			<nombre>Programación</nombre>
+			<horas>256</horas>
+		</modulo>
+		<modulo>
+			<nombre>Lenguajes de marcas y sistemas de gestión de información</nombre>
+			<horas>96</horas>
+		</modulo>
+		<modulo>
+			<nombre>Entornos de desarrollo</nombre>
+			<horas>96</horas>
+		</modulo>
+		<modulo>
+			<nombre>Formación y orientación Laboral</nombre>
+			<horas></horas>
+		</modulo>
+	  </modulos>  
+    </ciclo>
+    <ciclo id="SMR">
+      <nombre>Sistemas Microinformaticos y Redes</nombre>
+	  <legislacion>
+		<real_decreto>REAL DECRETO 1691/2007, de 14 de diciembre</real_decreto>
+		<orden>ORDEN de 7 de julio de 2009</orden>
+	  </legislacion>
+      <grado>Medio</grado>
+	  <anyo>2007</anyo>
+      <titulacion>Técnico en Sistemas Microinformáticos y Redes</titulacion>
+	  <modulos>
+	  	<modulo>
+			<nombre>Montaje y mantenimiento de equipos</nombre>
+			<horas>224</horas>
+		</modulo>
+		<modulo>
+			<nombre>Redes locales</nombre>
+			<horas>224</horas>
+		</modulo>
+		<modulo>
+			<nombre>Aplicaciones ofimáticas</nombre>
+			<horas>224</horas>
+		</modulo>
+		<modulo>
+			<nombre>Sistemas operativos monopuesto</nombre>
+			<horas>128</horas>
+		</modulo>
+		<modulo>
+			<nombre>Formación y Orientación Laboral</nombre>
+			<horas>96</horas>
+		</modulo>
+	  </modulos>
+    </ciclo>
+  </ciclos_informatica>
+</fp>
